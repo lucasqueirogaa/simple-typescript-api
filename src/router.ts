@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
+import { createMovie } from "./controllers/movieController";
 
 const router = Router();
 
-export default router;
+export default router.post("/movie", createMovie);
